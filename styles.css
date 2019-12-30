@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rum Raisin', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: 50vh 40vh 10vh;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "footer footer footer footer";
+  height: 100vh;
+}
+
+header {
+  padding: 16px;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 70%;
+  row-gap: 10px;
+  grid-template-areas: 
+  "controls controls controls controls"
+  ". welcome welcome .";
+  align-items: center;
+  background-color: #e95353;
+}
+
+#controls {
+  grid-area: controls;
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr 20%;
+  grid-template-areas: 
+  "logo . . basket";
+}
+
+#logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+}
+
+#logo img {
+  height: 60%;
+  width: calc(100 - 75);
+}
+
+#basket {
+  grid-area: basket;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+
+#basket img {
+  height: 60%;
+  width: calc(100 - 70);
+}
+
+#indicator {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  top: 50px;
+  border-radius: 50%;
+  background-color: #0BA323;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  /* visibility: hidden; */
+}
+
+#welcome {
+  grid-area: welcome;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 250%;
+  text-align: center;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  background-image: url('./assets/images/pizza-on-brown-wooden-board-825661.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cta {
+  position: relative;
+  display: flex;
+  width: 100%;
+  top: -25px;
+  justify-content: center;
+}
+
+#cta button {
+  height: 100%;
+  width: 165px;
+  text-align: center;
+  color: #e95353;
+}
+
+footer {
+  padding: 16px;
+  grid-area: footer;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  color: white;
+  font-size: 120%;
+  background-color: black;
+}
+
+#tagline {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  color: #e95353;
+}
+
+#copyright {
+  display: flex;
+  justify-content: flex-end; 
+  width: 50%;
+}
