@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  grid-template-rows: 50vh 40vh 10vh;
+  grid-template-rows: 50% 45% 5%;
   grid-template-areas: 
   "header header header header"
   "main main main main"
@@ -48,7 +48,7 @@ header {
 #logo img {
   height: 60%;
   width: calc(100 - 75);
-}
+} 
 
 #basket {
   grid-area: basket;
@@ -61,6 +61,10 @@ header {
 #basket img {
   height: 60%;
   width: calc(100 - 70);
+}
+
+#logo:hover, #basket:hover {
+  cursor: pointer;
 }
 
 #indicator {
@@ -110,14 +114,32 @@ main {
   color: #e95353;
 }
 
+form {
+  padding: 12px;;
+}
+
+#size-grid {
+  display: flex;
+  justify-content: center;
+}
+
+#size-grid label {
+  height: 80%;
+  width: 140px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #e95353;
+  font-size: 500%;
+}
+
 footer {
-  padding: 16px;
+  padding: 12px;
   grid-area: footer;
   display: flex;
   justify-content: stretch;
   align-items: center;
   color: white;
-  font-size: 120%;
+  font-size: 80%;
   background-color: black;
 }
 
