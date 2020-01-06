@@ -183,6 +183,16 @@ form {
   border-radius: 5px;
 }
 
+#total, #cost {
+  color: #e95353;
+  font-size: 4rem;
+}
+
+#currency {
+  color: #0BA323;
+  font-size: 2rem;
+}
+
 footer {
   padding: 12px;
   grid-area: footer;
