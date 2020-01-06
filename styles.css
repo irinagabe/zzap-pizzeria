@@ -173,6 +173,16 @@ form {
   -webkit-appearance: none;
 }
 
+#tdond { /* To Deliver Or Not To Deliver */
+  display: flex;
+  justify-content: center;
+}
+
+#tdond label {
+  margin: 10px;
+  border-radius: 5px;
+}
+
 footer {
   padding: 12px;
   grid-area: footer;
