@@ -114,8 +114,13 @@ main {
   color: #e95353;
 }
 
+.modal-title {
+  color: #e95353;
+}
+
 form {
-  padding: 12px;;
+  padding: 12px;
+  color: #e95353;
 }
 
 #size-grid {
