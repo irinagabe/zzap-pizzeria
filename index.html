@@ -117,6 +117,22 @@
                 </label>
               </div>
               <hr />
+              <!-- Quantity -->
+              <div id="quantity" class="row">
+                <div id="plus-minus" class="col-3 text-right">
+                  <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-danger" onclick="plusOne()">+</button>
+                    <button type="button" class="btn btn-success" onclick="minusOne()">-</button>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <input type="number" id="pie-quantity" min="0" value="1" />
+                </div>
+                <div class="col-4">
+                  Pies
+                </div>
+              </div>
+              <hr />
             </form>
           </div>
         </div>
