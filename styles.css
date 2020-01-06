@@ -132,6 +132,19 @@ form {
   font-size: 500%;
 }
 
+#toppings-grid, #crust-grid {
+  display: flex;
+  justify-content: center;
+}
+
+#toppings-grid label, #crust-grid label {
+  height: 20%;
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #e95353;
+}
+
 footer {
   padding: 12px;
   grid-area: footer;
