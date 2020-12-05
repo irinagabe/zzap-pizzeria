@@ -118,6 +118,11 @@ main {
   color: #e95353;
 }
 
+.modal-header button {
+  font-size: 1.5em;
+  height: 50%;
+}
+
 form {
   padding: 12px;
   color: #e95353;
@@ -196,6 +201,11 @@ form {
 #currency {
   color: #0BA323;
   font-size: 2rem;
+}
+
+#form-buttons {
+  justify-content: center;
+  width: 100%;
 }
 
 #form-buttons button {
